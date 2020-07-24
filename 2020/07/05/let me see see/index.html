@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="测试20.07.24, 编程">
+    <meta name="keywords" content="逆元, 编程">
     <meta name="description" content="编程哈哈哈">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>测试20.07.24 | Rain</title>
+    <title>逆元 | Rain</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,12 +245,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">测试20.07.24</h1>
+                    <h1 class="description center-align post-title">逆元</h1>
                 </div>
             </div>
         </div>
@@ -365,12 +365,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">编程</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%90%8D%E8%AF%8D/">
+                                <span class="chip bg-color">名词</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -379,7 +396,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-24
+                    2020-07-05
                 </div>
                 
 
@@ -395,7 +412,21 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下"></a>测试一下</h3>
+                <h1 id="什么是逆元？"><a href="#什么是逆元？" class="headerlink" title="什么是逆元？"></a><strong>什么是逆元？</strong></h1><h3 id="乘法逆元："><a href="#乘法逆元：" class="headerlink" title="乘法逆元："></a>乘法逆元：</h3><ul>
+<li>模p意义下，一个数a如果有逆元x，那么除以a相当于乘以x。</li>
+<li>在模n的意义下，a存在逆元的充要条件是**n不等于1，且（a，n）互质。<h3 id="怎样求逆元？"><a href="#怎样求逆元？" class="headerlink" title="怎样求逆元？"></a>怎样求逆元？</h3></li>
+</ul>
+<ol>
+<li>费马小定理（有限制）<br>=》p为素数时，a关于mod p的逆元为a^(p-2)mod p。用快速幂模。</li>
+<li>扩展欧几里得算法（普遍适用）  </li>
+</ol>
+<ul>
+<li>给定模数n，求a的逆元</li>
+<li>即ax=1(mod n)</li>
+<li>=》ax-ny=1</li>
+<li>所以可用扩展欧几里得， ax+by=gcd（a，b）求逆元，即求x的值。<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4>存在逆元的判断条件是 <strong>a，m互质</strong>。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if(gcd(a,m) !&#x3D; 1)       &#x2F;&#x2F;a，m不互质，则不存在逆元</span><br><span class="line"> cout &lt;&lt; &quot;Not Exist&quot; &lt;&lt; endl;</span><br><span class="line"> else</span><br><span class="line"> &#123;</span><br><span class="line">      ext_gcd(a, m, x, y);</span><br><span class="line">      LL ans &#x3D; (x&lt;&#x3D;0) ? (x%m+m) : x;  &#x2F;&#x2F;有可能x是负数，x要先取模再加</span><br><span class="line">      cout &lt;&lt; ans &lt;&lt; endl;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
             </div>
             <hr/>
 
@@ -410,7 +441,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">ZXY</a>
+                    <a href="/about" rel="external nofollow noreferrer">Rain</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -420,7 +451,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xrain06.github.io/2020/07/24/%E6%B5%8B%E8%AF%9520-07-24/">https://xrain06.github.io/2020/07/24/%E6%B5%8B%E8%AF%9520-07-24/</a>
+                    <a href="https://xrain06.github.io/2020/07/05/let%20me%20see%20see/">https://xrain06.github.io/2020/07/05/let%20me%20see%20see/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -433,7 +464,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">ZXY</a>
+                    <a href="/about" target="_blank">Rain</a>
                     !
                 </span>
             </div>
@@ -457,7 +488,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">编程</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%90%8D%E8%AF%8D/">
+                                    <span class="chip bg-color">名词</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -623,10 +662,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2020/07/24/%E6%B5%8B%E8%AF%9520-07-24/">
                     <div class="card-image">
@@ -644,9 +682,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -655,7 +693,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -666,24 +703,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/05/let%20me%20see%20see/">
+                <a href="/2020/07/05/looklook/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="逆元">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="looklook">
                         
-                        <span class="card-title">逆元</span>
+                        <span class="card-title">looklook</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是逆元？乘法逆元：
-模p意义下，一个数a如果有逆元x，那么除以a相当于乘以x。
-在模n的意义下，a存在逆元的充要条件是**n不等于1，且（a，n）互质。怎样求逆元？
-
-
-费马小定理（有限制）=》p为素数时，a关于mod p的逆元为a^(
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -692,27 +724,11 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ZXY
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                        <span class="chip bg-color">编程</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%90%8D%E8%AF%8D/">
-                        <span class="chip bg-color">名词</span>
-                    </a>
-                    
                 </div>
                 
             </div>
